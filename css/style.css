@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: #f9fafc;  
+    background: #f9fafc;
 }
 
 header {
@@ -34,7 +34,17 @@ a:visited {
 }
 
 
-.button{
+.button1{
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2{
     padding: 12px;
     border-radius: 50px;
     background-color: #000000;
@@ -46,7 +56,6 @@ a:visited {
 
 section {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
     margin: 20px;
 }
@@ -57,3 +66,91 @@ section p{
     border-left: 2px solid #69696a;
     color: #69696a;
 }
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    .links a{
+        margin: 0px 10px;
+    }
+
+    .links button {
+        margin: 0 auto;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .maintxt {
+        width: 50%;
+    }
+
+    .button2 {
+        position: absolute;
+        bottom: 10px;
+        margin: 0 42%;
+        width: 125px;
+    }
+
+    .image {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 1px;
+    }
+
+    #circle1 {
+        position: absolute;
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        right: 80px;
+    }
+
+    #circle2 {
+        position: absolute;
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        right: 20px;
+        top: 25px;
+    }
+
+    #circle3 {
+        position: absolute;
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        right: 20px;
+    }
+
+  }
+  
